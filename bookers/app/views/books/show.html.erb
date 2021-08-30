@@ -1,0 +1,10 @@
+<title>WebCampBackendNew</title>
+
+<p><strong>Title:</strong></p>
+<p><%= @book.title %></p>
+<p><strong>Body:</strong></p>
+<p><%= @book.body %></p>
+
+<a><%= book_to "Edit", edit_book_path(@book) %></a>
+<a> | </a>
+<a><%= book_to "Back", book_path(@book) %></a>
